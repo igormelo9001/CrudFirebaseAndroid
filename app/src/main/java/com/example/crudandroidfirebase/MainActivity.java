@@ -199,6 +199,8 @@ public class MainActivity extends AppCompatActivity {
                     //Saving the User
                     databaseReference.child(id).setValue(User);
 
+                    databaseReference.child("Users").push();
+
                     editTextName.setText("");
                     editTextNumber.setText("");
                     editTextEmail.setText("");
